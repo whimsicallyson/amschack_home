@@ -1,0 +1,254 @@
+/* Cross Browser Compatability CSS */
+/**
+ * html5doctor.com Reset Stylesheet (Eric Meyer's Reset Reloaded + HTML5 baseline)
+ * v1.6.1 2010-09-17 | Authors: Eric Meyer & Richard Clark
+ * html5doctor.com/html-5-reset-stylesheet/
+ */
+
+html, body, div, span, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+abbr, address, cite, code, del, dfn, em, img, ins, kbd, q, samp,
+small, strong, sub, sup, var, b, i, dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+blockquote, q { quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after { content: ""; content: none; }
+
+ins { background-color: #ff9; color: #000; text-decoration: none; }
+
+mark { background-color: #ff9; color: #000; font-style: italic; font-weight: bold; }
+
+del { text-decoration: line-through; }
+
+abbr[title], dfn[title] { border-bottom: 1px dotted; cursor: help; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+
+hr { display: block; height: 1px; border: 0; border-top: 1px solid #ccc; margin: 1em 0; padding: 0; }
+
+input, select { vertical-align: middle; }
+/*end of compatibility section*/
+
+
+/*general specs*/
+html{
+font-family: 'Arimo', Arial, sans-serif;
+font-size: 100%;
+}
+body{
+	background: url('../images/background.png') repeat;
+	font-family: 'Arimo', Arial, sans-serif;
+	font-size: 1em;
+}
+h1{
+	font-family: 'Arimo', Arial, sans-serif;
+	font-weight: 900;
+	font-size: 1.6em;
+	color: #034694;
+}
+h2{
+	font-family: 'Arimo', Arial, sans-serif;
+	font-weight: 600;
+	font-size: 1.3em;
+}
+h3{
+	font-family: 'Arimo', Arial, sans-serif;
+	font-size: 1.4em;
+	color: #034694;
+}
+p{
+	font-family: 'Arimo', Arial, sans-serif;
+	font-size: .9em;
+	color: black;
+}
+a:hover {
+	background:rgba(175,175,190,.5);
+	color: #F00000;
+}
+a:link{
+	color: #034694;
+	text-decoration: none;
+}
+a:visited{
+	color: #ed1a3b;
+	text-decoration: none;
+}
+
+/*APER and top links*/
+header{
+	background: -moz-linear-gradient(top,  rgba(0,48,113,0.85) 0%, rgba(125,185,232,0) 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(0,48,113,0.85)), color-stop(100%,rgba(125,185,232,0))); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top,  rgba(0,48,113,0.85) 0%,rgba(125,185,232,0) 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top,  rgba(0,48,113,0.85) 0%,rgba(125,185,232,0) 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top,  rgba(0,48,113,0.85) 0%,rgba(125,185,232,0) 100%); /* IE10+ */
+	background: linear-gradient(to bottom,  rgba(0,48,113,0.85) 0%,rgba(125,185,232,0) 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9003071', endColorstr='#007db9e8',GradientType=0 ); /* IE6-9 */
+	padding-bottom: 5%;
+}
+header a:link{
+	color: #ffffff;
+}
+header a:visited{
+	color: #e21b1d;
+}
+.topnav {
+	width: 100%;
+	text-align: right;
+	font-size: .95em;
+	margin-left: -10px;
+	padding-top: 10px;
+}
+.headerimg{
+	float: left;
+	width: 25%;
+	margin-left: 2%;
+}
+.headerimg a:hover{
+	background-color: rgba(0,0,0,0);
+}
+.headertext{
+	width: 95%;
+	margin-left: 2%;
+	margin-top: 3%;
+	text-align: left;
+}
+.logo{
+	max-width: 100%;
+	height: auto;
+	width: auto\9; /* ie8 hack */
+}
+
+/*navigation buttons*/
+nav{
+	width: 90%;
+	text-align: center;
+	margin-left: 5%;
+	padding: 0px 0px 30px 0px;
+	clear: both;
+}
+nav li{
+	background: #efefef; 
+	background: linear-gradient(top, #efefef 0%, #bbbbbb 100%);  
+	background: -moz-linear-gradient(top, #efefef 0%, #bbbbbb 100%); 
+	background: -webkit-linear-gradient(top, #efefef 0%,#bbbbbb 100%); 
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+	padding: .5%;
+	border-radius: 10px; 
+	display: inline;
+	width: 15.5%; /*change this number to add/delete buttons and keep on one line*/
+	list-style: none;
+	font-size: 1em;
+	float: left;
+	position: relative;
+}
+nav a:hover{
+	background: none;
+}
+nav li a{
+	display: block;
+	padding: 5px 3px;
+	color: black;
+	text-decoration: none;
+}
+nav li ul{
+	display: none;
+}
+nav ul li:hover {
+	background: #c0c6ca; /* Old browsers */
+	background: -moz-linear-gradient(top, #c0c6ca 0%, #acbfcc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c0c6ca), color-stop(100%,#acbfcc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #c0c6ca 0%,#acbfcc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #c0c6ca 0%,#acbfcc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #c0c6ca 0%,#acbfcc 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #c0c6ca 0%,#acbfcc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c0c6ca', endColorstr='#acbfcc',GradientType=0 ); /* IE6-9 */
+	z-index: 100;
+}
+nav li:hover ul{
+	display: block;
+	position: absolute;
+	background: #c0c6ca; /* Old browsers */
+	background: -moz-linear-gradient(top, #c0c6ca 0%, #acbfcc 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#c0c6ca), color-stop(100%,#acbfcc)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #c0c6ca 0%,#acbfcc 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #c0c6ca 0%,#acbfcc 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #c0c6ca 0%,#acbfcc 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #c0c6ca 0%,#acbfcc 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#c0c6ca', endColorstr='#acbfcc',GradientType=0 ); /* IE6-9 */
+	box-shadow: 0px 0px 10px rgba(0,0,0,0.15);
+	padding: 0;
+	border-radius: 10px; 
+	top: 100%;
+	font-size: .9em;
+}
+nav li:hover li{
+	border-radius: 10px;
+	float: none; 
+	position: relative;
+}
+nav li:hover li a{
+	display: block;
+	width: 150px;
+	color: #034694;
+}
+nav li li a:hover{
+	background: rgb(109,143,165);
+}
+
+
+.paragraph{
+	width: 85%;
+	text-align: left;
+	margin-left: 7.5%;
+	line-height: 125%;
+}
+
+/*amschack, sitemap, legal*/
+.footer-image{
+	width: 95%;
+	margin-left: 7px;
+	text-align: left;
+	font-size: .9em;
+	float: left;
+}
+.footer-left{
+	width: 45%;
+	margin: 0px 0px 7px 7px;
+	text-align: left;
+	font-size: .9em;
+	float: left;
+}
+.footer-right{
+	width: 45%;
+	margin: 0px 7px 7px 0px;
+	text-align: right;
+	font-size: .9em;
+	float: right;
+}
+
+/*for survey forms only*/
+#quest {
+margin-top: 8pt;
+}
+#thanks {
+text-align: center;
+margin-top: 30pt;
+}
